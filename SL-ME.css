@@ -1,0 +1,102 @@
+ul#menu_horizontal { 
+width : 800px; 
+height : 50px;
+padding : 0;
+list-style-type : none;
+margin-left:47px;
+}
+ 
+#menu_horizontal { 
+background: url(/images/barremenu/BarreBlanche/BarreBlanche.png) no-repeat;
+background-position:0px 27px;
+
+}
+
+ul#menu_horizontal li.bouton_gauche {
+float : left;
+border-right : 1px dashed black; 
+background:url(/images/barremenu/Separateur/Separateur.png);
+}
+ 
+ul#menu_horizontal li.bouton_droite {
+float : right;
+border-left : 0px dashed black;
+}
+
+
+
+/* Slideshow*/
+.contener_slideshow
+{z-index:1;
+ margin-top:-27px;
+ margin-left:-6px;
+ width:800px;
+ height:250px;
+ overflow: hidden;
+ position: relative;
+ /*background-image: url(stream.png);*/
+}
+.slid_1, .slid_2, .slid_3
+{
+ position: absolute;
+ width:800px;
+ height:250px;
+}
+.slid_1{left: 0;}
+.slid_2{left: 800px;}
+.slid_3{left: 1600px;}
+.contener_slide
+{
+ width: 800px;
+ height: 250px;
+ left:0px;
+ position: absolute;
+ -webkit-animation-duration: 20s;
+ -webkit-animation-iteration-count:infinite;
+ -webkit-animation-name: anim_slide;
+ -moz-animation-duration: 20s;
+ -moz-animation-iteration-count:infinite;
+ -moz-animation-name: anim_slide;
+ -ms-animation-duration: 20s;
+ -ms-animation-iteration-count:infinite;
+ -ms-animation-name: anim_slide;
+ animation-duration: 20s;
+ animation-iteration-count:infinite;
+ animation-name: anim_slide;
+}
+@-webkit-keyframes anim_slide
+{
+ 0% {left:0px;}
+ 22% {left:0px;}
+ 33% {left:-800px;}
+ 45% {left:-800px;}
+ 66% {left:-1600px;}
+ 90% {left:-1600px;}
+}
+@-moz-keyframes anim_slide
+{
+ 0% {left:0px;}
+ 22% {left:0px;}
+ 33% {left:-800px;}
+ 45% {left:-800px;}
+ 66% {left:-1600px;}
+ 90% {left:-1600px;}
+}
+@-ms-keyframes anim_slide
+{
+ 0% {left:0px;}
+ 22% {left:0px;}
+ 33% {left:-800px;}
+ 45% {left:-800px;}
+ 66% {left:-1600px;}
+ 90% {left:-1600px;}
+}
+@keyframes anim_slide
+{
+ 0% {left:0px;}
+ 22% {left:0px;}
+ 33% {left:-800px;}
+ 45% {left:-800px;}
+ 66% {left:-1600px;}
+ 90% {left:-1600px;}
+}

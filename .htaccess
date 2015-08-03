@@ -1,0 +1,16 @@
+#Fichier .htaccess
+
+Options +FollowSymlinks
+RewriteBase /
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 404 /erreur.html
+
+RewriteRule ^(\w+)/(\d+)$ article.php?genre=$1&page=$2 [L]
+
+RewriteRule ^(.+).html$ articleComplet.php?slug=$1 [L]
+
+RewriteRule ^(.+)\.html?$ $1\.php
