@@ -5,7 +5,7 @@
 <meta name="description" content="Le site qui te parle de tous sur l'actus Geek high tech et E-Sport du moment !" />
     <meta name="google-site-verification" content="0K5Fn4atDOAHvtFVlFhANGxnZCOyHex_AiAOZ4JKTgo" />
 	<link rel="stylesheet" href="/style.css" />
-
+<!-- test-->
     <title>DropTheBits!</title>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
